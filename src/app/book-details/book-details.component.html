@@ -1,0 +1,7 @@
+<div *ngIf="book">
+  <img [src]="book.coverUrl" alt="Book Cover" class="book-cover" (click)="showHighResCover()">
+
+  <h3 class="book-title">{{ book.title }}</h3>
+  <p class="book-author">Author: <a [href]="book.authorWebsite" target="_blank">{{ book.author }}</a></p>
+  <p class="book-description">{{ book.description }}</p>
+</div>

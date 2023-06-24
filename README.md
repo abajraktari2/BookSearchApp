@@ -1,6 +1,13 @@
-# BookSearchApp
+# **Bookify**
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+Bookify is Book Search App built with Angular. It allows users to search for books by title, author, or subject using the Open Library API.
+
+## Features
+
+- Search books by title, author, or subject.
+- View search results with book details including title, author, description, and cover image.
+- Select a book to view additional details such as the published year, publishers, and number of pages etc.
 
 ## Development server
 

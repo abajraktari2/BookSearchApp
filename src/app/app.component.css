@@ -1,0 +1,75 @@
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.search-container {
+  margin-top: 50px;
+}
+
+.results-container {
+  margin-top: 40px;
+}
+
+.details-container {
+  margin-top: 40px;
+}
+
+.search-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.search-button:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.search-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.mat-form-field {
+  width: 800px;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+  border-radius: 30px;
+  border: 4px solid #aaa;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-wrapper:hover {
+  border-color: #666;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 10px 30px;
+}
+@media screen and (max-width: 600px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .mat-form-field {
+    max-width: 100%;
+    margin: 5px;
+  }
+}

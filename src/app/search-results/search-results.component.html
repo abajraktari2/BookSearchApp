@@ -1,0 +1,20 @@
+<div class="search-results">
+  <div *ngFor="let book of results">
+    <div class="book-card">
+      <img [src]="book.coverUrl" alt="Book Cover" class="book-cover" (click)="displayHighResImage(book)" />
+      <h3 class="book-title">{{ book.title }}</h3>
+      <p class="book-author"><strong>Author: </strong> <a [href]="book.authorWebsite" target="_blank">{{ book.author }}</a></p>
+      <button class="view-details-button" (click)="toggleBookDetails(book.id)">View Details</button>
+      
+      <div class="book-details" *ngIf="selectedBookId === book.id">
+        <p><strong>Book ID:</strong> {{ book.id.replace('/works/', '') }}</p>
+<p><strong>Book Name:</strong> {{ book.title }}</p>
+<p><strong>Author:</strong> {{ book.author }}</p>
+<p><strong>Published Year:</strong> {{ book.publishedYear }}</p>
+<p><strong>Publisher:</strong> {{ book.publishers }}</p>
+<p><strong>Number of Pages:</strong> {{ book.numberOfPages }}</p>
+        <p><strong>ISBN:</strong> {{ book.ISBN }}</p>
+      </div>
+    </div>
+  </div>
+</div>

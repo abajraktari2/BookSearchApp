@@ -1,9 +1,12 @@
-<div class="app-container">
-  <h1>BOOKIFY</h1>
-  <div class="search-container">
+<!-- Container for the search form -->
+<div class="search-container">
+  <!-- Search form -->
+  <div class="search-form">
+    <!-- Mat-form-field for the search term input -->
     <mat-form-field appearance="outline">
       <input matInput placeholder="Enter a search term" [(ngModel)]="searchQuery">
     </mat-form-field>
+    <!-- Mat-form-field for the search criteria select -->
     <mat-form-field appearance="outline">
       <mat-label>Search Criteria</mat-label>
       <mat-select [(ngModel)]="selectedSearchCriteria">
@@ -12,12 +15,7 @@
         <mat-option value="subject">Subject</mat-option>
       </mat-select>
     </mat-form-field>
+    <!-- Search button -->
     <button class="search-button" (click)="search()">Search</button>
-  </div>
-  <div class="results-container">
-    <app-search-results [results]="searchResults" (bookSelected)="viewDetails($event)"></app-search-results>
-  </div>
-  <div class="details-container">
-    <app-book-details [book]="selectedBook"></app-book-details>
   </div>
 </div>

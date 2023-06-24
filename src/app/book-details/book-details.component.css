@@ -1,0 +1,26 @@
+/* book-details.component.css */
+.book-details {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .book-card {
+    width: 400px;
+  }
+  
+  .book-cover {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .book-cover img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
